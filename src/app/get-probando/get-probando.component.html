@@ -1,0 +1,6 @@
+<div *ngFor="let probando of probandos$ | async">
+    <p>{{ probando.nombre }}</p>
+    <p>{{ probando.descripcion }}</p>
+    <p>{{ probando.calificacion }}</p>
+    <button (click)="onClickDelete(probando)">Borrar</button>
+</div>
